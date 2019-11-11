@@ -1,0 +1,115 @@
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+body{
+  font-family:"TT Lakes", sans-serif;
+  line-height:20px;
+  font-size: 14px;
+  padding:0;
+  margin:0;
+  background:#F2F2F2;
+  color:#1B1C21;
+}
+.services{
+  width: 1120px;
+  margin:0 auto;
+}
+.services-header {
+  margin-top:42px;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+ }
+.services-header-title{
+   border-left:3px solid #41F6D7;
+   border-radius: 2px;
+   width:350px;
+   font-size: 28px;
+   line-height: 40px; 
+   padding-left:32px;
+   font-weight:900;
+}
+.services-header-link{
+  text-decoration:none;
+  display:flex;
+  justify-content:space-around;
+  width:400px;
+}
+.services-header-a{
+  text-decoration:none;
+  font-size:16px;
+  line-height:24px;
+  color:#1B1C21;
+;
+}
+.red-circle{
+  width:40px;
+  height:40px;
+  vertical-align:middle;
+  margin-left:8px;
+}
+
+
+.services-menu-ul {
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  font-size:16px;
+  line-height:24px;
+}
+.services-menu-li{
+  width:20%;
+  height:40px;
+  text-align:center;
+  display:flex;
+  align-items: center; 
+  justify-content: center;
+}
+.services-menu-li:hover, 
+.services-menu-li:focus{
+  border: 2px solid #B8FFEC;
+}
+.services-menu-a{
+  color:#7E7E82; 
+  text-decoration:none;
+}
+
+.services-content{
+  padding-left:35px;
+  display:flex;
+  justify-content:space-between;
+}
+.services-text{
+  width:45%;
+}
+.services-content-img{
+  width:45%;
+}
+.services-content__nextRead{
+  position:relative;
+}
+.services-content__nextRead::before{
+  content:"";  
+  display:inline-block;
+  border-left:2px solid #B8FFEC;
+  border-bottom:2px solid #B8FFEC;
+  width:0.5em;
+  height:0.5em;
+  transform: rotate(-45deg);
+  margin-right:5px;         
+}
+.services-content__nextRead:after{
+  content:"";  
+  position:absolute;
+  left:0px;
+  display:inline-block;
+  border-left:2px solid #B8FFEC;
+  border-bottom:2px solid #B8FFEC;
+  width:0.5em;
+  height:0.5em;
+  transform: rotate(-45deg);
+}
