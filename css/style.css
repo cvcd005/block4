@@ -38,16 +38,13 @@ body{
   justify-content:space-between;
   width:400px;
 }
+
 .btn{
   background-color:transparent;
   border:none;
   cursor:pointer;
-}
-.btn-header{
-  font-size:16px;
-  line-height:24px;
-  color:#1B1C21;
-  letter-spacing: -0.2px;
+  margin:0;/*нет в блоке 4*/
+  padding:0;/*нет в блоке 4*/
 }
 .circle{
   width:40px;
@@ -55,17 +52,24 @@ body{
   vertical-align:middle;
   border-radius:50%;
   display:inline-block;
+  background-color:#FF3E79;
+}
+
+
+.btn-header{
+  font-size:16px;
+  line-height:24px;
+  color:#1B1C21;
+  letter-spacing: -0.2px;
 }
 .btn__order{
   background-image: url("../img/f.svg");
   background-repeat:no-repeat;
   background-position:center;
-  background-color:#FF3E79;
 }
 .btn__status{
   background-repeat:no-repeat;
   background-position:center;
-  background-color:#FF3E79;
   background-image: url("../img/status.svg");
 }
 .nav{
